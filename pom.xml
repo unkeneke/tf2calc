@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>net.tf2calc</groupId>
+  <artifactId>tf2calc</artifactId>
+  <version>1.0</version>
+  
+  <name>TF2 Calculator</name>
+  <url>http://softmood.tumblr.com/</url>
+  
+  <developers>
+    <developer>
+      <id>kanaka</id>
+      <organizationUrl>http://softmood.tumblr.com/</organizationUrl>
+      <roles>
+        <role>Project owner</role>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Slowhand</name>
+      <roles>
+        <role>Tester</role>
+      </roles>
+    </contributor>
+    <contributor>
+      <name>xvt</name>
+      <roles>
+        <role>Tester</role>
+      </roles>
+    </contributor>
+  </contributors>
+  
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources/properties</directory>
+        <filtering>true</filtering>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>src/main/resources/images</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+          <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+          </configuration>
+        </plugin>
+      
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+            <outputDirectory>${basedir}/target</outputDirectory>
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addClasspath>true</addClasspath>
+                <mainClass>net.tf2calc.main.Main</mainClass>
+                <classpathPrefix></classpathPrefix>
+              </manifest>
+              <manifestEntries>
+                <Class-Path>jgoodies-looks-2.5.2.jar jgoodies-common-1.4.0.jar</Class-Path>
+              </manifestEntries>
+            </archive>
+          </configuration>
+      	</plugin>
+        
+      </plugins>
+    </pluginManagement>
+    
+  </build>
+  
+  <dependencies>
+    <dependency>
+	  <groupId>com.miglayout</groupId>
+	  <artifactId>miglayout-swing</artifactId>
+	  <version>4.2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.jgoodies</groupId>
+      <artifactId>jgoodies-looks</artifactId>
+      <version>2.5.2</version>
+      <type>jar</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/jgoodies-looks-2.5.2.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.jgoodies</groupId>
+	  <artifactId>jgoodies-common</artifactId>
+	  <version>1.4.0</version>
+      <type>jar</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/jgoodies-common-1.4.0.jar</systemPath>
+    </dependency>
+    <!--<dependency>
+      <groupId>net.jtattoo</groupId>
+	  <artifactId>JTattoo</artifactId>
+	  <version>1.0</version>
+      <type>jar</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/JTattoo.jar</systemPath>
+    </dependency>-->
+  </dependencies>
+
+    
+</project>
