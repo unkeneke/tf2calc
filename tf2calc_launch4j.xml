@@ -1,0 +1,48 @@
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>lib\tf2calc-1.0.jar</jar>
+  <outfile>C:\Users\--CHANGE NAME HERE--\Desktop\tf2calc.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>https://github.com/onekanaka/tf2calc</supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>C:\Users\--CHANGE NAME HERE--\Desktop\tf2_calc_logo_48x48.ico</icon>
+  <classPath>
+    <mainClass>net.tf2calc.main.Main</mainClass>
+    <cp>jgoodies-looks-2.5.2.jar</cp>
+    <cp>jgoodies-common-1.4.0.jar</cp>
+    <cp>miglayout-swing-4.2.jar</cp>
+    <cp>miglayout-core-4.2.jar</cp>
+  </classPath>
+  <jre>
+    <path></path>
+    <minVersion>1.7.0_07</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0</txtFileVersion>
+    <fileDescription>TF2 Calculator</fileDescription>
+    <copyright>kanaka</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>TF2 Calculator</productName>
+    <companyName></companyName>
+    <internalName>tf2calc</internalName>
+    <originalFilename>tf2calc.exe</originalFilename>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment.</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
