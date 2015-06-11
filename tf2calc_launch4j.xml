@@ -12,7 +12,7 @@
   <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>C:\Users\--CHANGE NAME HERE--\Desktop\tf2_calc_logo_48x48.ico</icon>
+  <icon>C:\Users\--CHANGE NAME HERE--\Desktop\tf2_calc_logo_16x16.ico</icon>
   <classPath>
     <mainClass>net.tf2calc.main.Main</mainClass>
     <cp>jgoodies-looks-2.5.2.jar</cp>
