@@ -1,5 +1,10 @@
 # TF2 Calc v1.0 ![tf2cal icon](https://raw.githubusercontent.com/onekanaka/tf2calc/master/tf2_calc_logo_48x48.png)
-Team Fortress 2 Metal/Key calculator
+
+Team Fortress 2 Metal/Key calculator.
+
+The program calculates the value of a determined number of items in terms of weapons, scrap metal, reclaimed metal, refined metal, and keys.
+
+![tf2cal icon](https://raw.githubusercontent.com/onekanaka/tf2calc/master/example.png)
 
 This project was created with Eclipse Luna SR2, [https://www.eclipse.org/downloads/](https://www.eclipse.org/downloads/)
 
